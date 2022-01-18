@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA272AB927872B9D00AA3D03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA272AB827872B9D00AA3D03 /* AppDelegate.swift */; };
+		EA272ABB27872B9D00AA3D03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA272ABA27872B9D00AA3D03 /* SceneDelegate.swift */; };
+		EA272ABD27872B9D00AA3D03 /* HouseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA272ABC27872B9D00AA3D03 /* HouseListViewController.swift */; };
+		EA272AC027872B9D00AA3D03 /* HogwartsHouses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA272ABE27872B9D00AA3D03 /* HogwartsHouses.storyboard */; };
+		EA272AC227872B9E00AA3D03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA272AC127872B9E00AA3D03 /* Assets.xcassets */; };
+		EA272AC527872B9E00AA3D03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA272AC327872B9E00AA3D03 /* LaunchScreen.storyboard */; };
+		EA272AFB2787950800AA3D03 /* StudentNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA272AFA2787950800AA3D03 /* StudentNetworkModel.swift */; };
+		EA272B0227879A1000AA3D03 /* StudentListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA272AFC27879A1000AA3D03 /* StudentListPresenter.swift */; };
+		EA272B0327879A1000AA3D03 /* StudentListNetworkWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA272AFD27879A1000AA3D03 /* StudentListNetworkWorker.swift */; };
+		EA272B0527879A1000AA3D03 /* StudentListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA272AFF27879A1000AA3D03 /* StudentListModels.swift */; };
+		EA272B0627879A1000AA3D03 /* StudentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA272B0027879A1000AA3D03 /* StudentListViewController.swift */; };
+		EA272B0727879A1000AA3D03 /* StudentListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA272B0127879A1000AA3D03 /* StudentListInteractor.swift */; };
+		EA272B182788C81A00AA3D03 /* HouseListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA272B172788C81A00AA3D03 /* HouseListInteractor.swift */; };
+		EA272B1A2788C82700AA3D03 /* HouseListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA272B192788C82700AA3D03 /* HouseListPresenter.swift */; };
+		EA272B1C2788C83500AA3D03 /* HouseListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA272B1B2788C83500AA3D03 /* HouseListModels.swift */; };
+		EA272B202788C87400AA3D03 /* HouseListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA272B1F2788C87400AA3D03 /* HouseListRouter.swift */; };
+		EA272B222788D6C500AA3D03 /* StudentListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA272B212788D6C500AA3D03 /* StudentListRouter.swift */; };
+		EACF8BC1278CE05000DE084C /* StudentListDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACF8BBB278CE05000DE084C /* StudentListDetailsPresenter.swift */; };
+		EACF8BC2278CE05000DE084C /* StudentListDetailsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACF8BBC278CE05000DE084C /* StudentListDetailsWorker.swift */; };
+		EACF8BC3278CE05000DE084C /* StudentListDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACF8BBD278CE05000DE084C /* StudentListDetailsRouter.swift */; };
+		EACF8BC4278CE05000DE084C /* StudentListDetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACF8BBE278CE05000DE084C /* StudentListDetailsModels.swift */; };
+		EACF8BC5278CE05000DE084C /* StudentListDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACF8BBF278CE05000DE084C /* StudentListDetailsViewController.swift */; };
+		EACF8BC6278CE05000DE084C /* StudentListDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACF8BC0278CE05000DE084C /* StudentListDetailsInteractor.swift */; };
+		EAD47083278A3FE800929D82 /* StudentListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD47081278A3FE800929D82 /* StudentListPresenterTests.swift */; };
+		EAD47085278A405600929D82 /* StudentListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD47084278A405600929D82 /* StudentListInteractorTests.swift */; };
+		EAD47087278A406900929D82 /* StudentListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD47086278A406900929D82 /* StudentListViewControllerTests.swift */; };
+		EAD4708A278A40A400929D82 /* HouseListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD47089278A40A400929D82 /* HouseListPresenterTests.swift */; };
+		EAD4708C278A40BA00929D82 /* HouseListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD4708B278A40BA00929D82 /* HouseListInteractorTests.swift */; };
+		EAD4708E278A40CD00929D82 /* HouseListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD4708D278A40CD00929D82 /* HouseListViewControllerTests.swift */; };
+		EAD47090278BAC4C00929D82 /* StudentListSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD4708F278BAC4C00929D82 /* StudentListSeeds.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAD47077278A39E300929D82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA272AAD27872B9D00AA3D03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA272AB427872B9D00AA3D03;
+			remoteInfo = iOSConfSGDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA272AB527872B9D00AA3D03 /* iOSConfSGDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSConfSGDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA272AB827872B9D00AA3D03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA272ABA27872B9D00AA3D03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EA272ABC27872B9D00AA3D03 /* HouseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListViewController.swift; sourceTree = "<group>"; };
+		EA272ABF27872B9D00AA3D03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HogwartsHouses.storyboard; sourceTree = "<group>"; };
+		EA272AC127872B9E00AA3D03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA272AC427872B9E00AA3D03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA272AC627872B9E00AA3D03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA272AFA2787950800AA3D03 /* StudentNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentNetworkModel.swift; sourceTree = "<group>"; };
+		EA272AFC27879A1000AA3D03 /* StudentListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListPresenter.swift; sourceTree = "<group>"; };
+		EA272AFD27879A1000AA3D03 /* StudentListNetworkWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListNetworkWorker.swift; sourceTree = "<group>"; };
+		EA272AFF27879A1000AA3D03 /* StudentListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListModels.swift; sourceTree = "<group>"; };
+		EA272B0027879A1000AA3D03 /* StudentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewController.swift; sourceTree = "<group>"; };
+		EA272B0127879A1000AA3D03 /* StudentListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListInteractor.swift; sourceTree = "<group>"; };
+		EA272B172788C81A00AA3D03 /* HouseListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListInteractor.swift; sourceTree = "<group>"; };
+		EA272B192788C82700AA3D03 /* HouseListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListPresenter.swift; sourceTree = "<group>"; };
+		EA272B1B2788C83500AA3D03 /* HouseListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListModels.swift; sourceTree = "<group>"; };
+		EA272B1F2788C87400AA3D03 /* HouseListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListRouter.swift; sourceTree = "<group>"; };
+		EA272B212788D6C500AA3D03 /* StudentListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListRouter.swift; sourceTree = "<group>"; };
+		EACF8BBB278CE05000DE084C /* StudentListDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListDetailsPresenter.swift; sourceTree = "<group>"; };
+		EACF8BBC278CE05000DE084C /* StudentListDetailsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListDetailsWorker.swift; sourceTree = "<group>"; };
+		EACF8BBD278CE05000DE084C /* StudentListDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListDetailsRouter.swift; sourceTree = "<group>"; };
+		EACF8BBE278CE05000DE084C /* StudentListDetailsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListDetailsModels.swift; sourceTree = "<group>"; };
+		EACF8BBF278CE05000DE084C /* StudentListDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListDetailsViewController.swift; sourceTree = "<group>"; };
+		EACF8BC0278CE05000DE084C /* StudentListDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListDetailsInteractor.swift; sourceTree = "<group>"; };
+		EAD47073278A39E300929D82 /* iOSConfSGDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSConfSGDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAD47081278A3FE800929D82 /* StudentListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListPresenterTests.swift; sourceTree = "<group>"; };
+		EAD47084278A405600929D82 /* StudentListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListInteractorTests.swift; sourceTree = "<group>"; };
+		EAD47086278A406900929D82 /* StudentListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewControllerTests.swift; sourceTree = "<group>"; };
+		EAD47089278A40A400929D82 /* HouseListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListPresenterTests.swift; sourceTree = "<group>"; };
+		EAD4708B278A40BA00929D82 /* HouseListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListInteractorTests.swift; sourceTree = "<group>"; };
+		EAD4708D278A40CD00929D82 /* HouseListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListViewControllerTests.swift; sourceTree = "<group>"; };
+		EAD4708F278BAC4C00929D82 /* StudentListSeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListSeeds.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA272AB227872B9D00AA3D03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAD47070278A39E300929D82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA272AAC27872B9D00AA3D03 = {
+			isa = PBXGroup;
+			children = (
+				EA272AB727872B9D00AA3D03 /* iOSConfSGDemo */,
+				EAD47074278A39E300929D82 /* iOSConfSGDemoTests */,
+				EA272AB627872B9D00AA3D03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA272AB627872B9D00AA3D03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA272AB527872B9D00AA3D03 /* iOSConfSGDemo.app */,
+				EAD47073278A39E300929D82 /* iOSConfSGDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA272AB727872B9D00AA3D03 /* iOSConfSGDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EA272ACC27872BB200AA3D03 /* Domain */,
+				EA272AB827872B9D00AA3D03 /* AppDelegate.swift */,
+				EA272ABA27872B9D00AA3D03 /* SceneDelegate.swift */,
+				EA272AC127872B9E00AA3D03 /* Assets.xcassets */,
+				EA272AC327872B9E00AA3D03 /* LaunchScreen.storyboard */,
+				EA272AC627872B9E00AA3D03 /* Info.plist */,
+			);
+			path = iOSConfSGDemo;
+			sourceTree = "<group>";
+		};
+		EA272ACC27872BB200AA3D03 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				EA272ACD27872BD200AA3D03 /* HogwartsHouses */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		EA272ACD27872BD200AA3D03 /* HogwartsHouses */ = {
+			isa = PBXGroup;
+			children = (
+				EA272ABE27872B9D00AA3D03 /* HogwartsHouses.storyboard */,
+				EA272AF9278793B000AA3D03 /* Models */,
+				EA272ACE27872BE400AA3D03 /* Scenes */,
+			);
+			path = HogwartsHouses;
+			sourceTree = "<group>";
+		};
+		EA272ACE27872BE400AA3D03 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EACF8BBA278CE01900DE084C /* StudentListDetails */,
+				EA272B152788C77B00AA3D03 /* HouseList */,
+				EA272AD227872BFC00AA3D03 /* StudentList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EA272AD227872BFC00AA3D03 /* StudentList */ = {
+			isa = PBXGroup;
+			children = (
+				EA272B0027879A1000AA3D03 /* StudentListViewController.swift */,
+				EA272B0127879A1000AA3D03 /* StudentListInteractor.swift */,
+				EA272AFC27879A1000AA3D03 /* StudentListPresenter.swift */,
+				EA272AFF27879A1000AA3D03 /* StudentListModels.swift */,
+				EA272B212788D6C500AA3D03 /* StudentListRouter.swift */,
+				EA272AFD27879A1000AA3D03 /* StudentListNetworkWorker.swift */,
+			);
+			path = StudentList;
+			sourceTree = "<group>";
+		};
+		EA272AF9278793B000AA3D03 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA272AFA2787950800AA3D03 /* StudentNetworkModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA272B152788C77B00AA3D03 /* HouseList */ = {
+			isa = PBXGroup;
+			children = (
+				EA272ABC27872B9D00AA3D03 /* HouseListViewController.swift */,
+				EA272B172788C81A00AA3D03 /* HouseListInteractor.swift */,
+				EA272B192788C82700AA3D03 /* HouseListPresenter.swift */,
+				EA272B1B2788C83500AA3D03 /* HouseListModels.swift */,
+				EA272B1F2788C87400AA3D03 /* HouseListRouter.swift */,
+			);
+			path = HouseList;
+			sourceTree = "<group>";
+		};
+		EACF8BBA278CE01900DE084C /* StudentListDetails */ = {
+			isa = PBXGroup;
+			children = (
+				EACF8BBB278CE05000DE084C /* StudentListDetailsPresenter.swift */,
+				EACF8BBC278CE05000DE084C /* StudentListDetailsWorker.swift */,
+				EACF8BBD278CE05000DE084C /* StudentListDetailsRouter.swift */,
+				EACF8BBE278CE05000DE084C /* StudentListDetailsModels.swift */,
+				EACF8BBF278CE05000DE084C /* StudentListDetailsViewController.swift */,
+				EACF8BC0278CE05000DE084C /* StudentListDetailsInteractor.swift */,
+			);
+			path = StudentListDetails;
+			sourceTree = "<group>";
+		};
+		EAD47074278A39E300929D82 /* iOSConfSGDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAD4707C278A39EE00929D82 /* Domain */,
+			);
+			path = iOSConfSGDemoTests;
+			sourceTree = "<group>";
+		};
+		EAD4707C278A39EE00929D82 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				EAD4707D278A39F700929D82 /* HogwartsHouses */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		EAD4707D278A39F700929D82 /* HogwartsHouses */ = {
+			isa = PBXGroup;
+			children = (
+				EAD47088278A407400929D82 /* Seeds */,
+				EAD4707E278A3A0200929D82 /* Scenes */,
+			);
+			path = HogwartsHouses;
+			sourceTree = "<group>";
+		};
+		EAD4707E278A3A0200929D82 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EAD4707F278A3A0600929D82 /* HouseList */,
+				EAD47080278A3A0D00929D82 /* StudentList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EAD4707F278A3A0600929D82 /* HouseList */ = {
+			isa = PBXGroup;
+			children = (
+				EAD4708D278A40CD00929D82 /* HouseListViewControllerTests.swift */,
+				EAD4708B278A40BA00929D82 /* HouseListInteractorTests.swift */,
+				EAD47089278A40A400929D82 /* HouseListPresenterTests.swift */,
+			);
+			path = HouseList;
+			sourceTree = "<group>";
+		};
+		EAD47080278A3A0D00929D82 /* StudentList */ = {
+			isa = PBXGroup;
+			children = (
+				EAD47086278A406900929D82 /* StudentListViewControllerTests.swift */,
+				EAD47084278A405600929D82 /* StudentListInteractorTests.swift */,
+				EAD47081278A3FE800929D82 /* StudentListPresenterTests.swift */,
+			);
+			path = StudentList;
+			sourceTree = "<group>";
+		};
+		EAD47088278A407400929D82 /* Seeds */ = {
+			isa = PBXGroup;
+			children = (
+				EAD4708F278BAC4C00929D82 /* StudentListSeeds.swift */,
+			);
+			path = Seeds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA272AB427872B9D00AA3D03 /* iOSConfSGDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA272AC927872B9E00AA3D03 /* Build configuration list for PBXNativeTarget "iOSConfSGDemo" */;
+			buildPhases = (
+				EA272AB127872B9D00AA3D03 /* Sources */,
+				EA272AB227872B9D00AA3D03 /* Frameworks */,
+				EA272AB327872B9D00AA3D03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSConfSGDemo;
+			productName = iOSConfSGDemo;
+			productReference = EA272AB527872B9D00AA3D03 /* iOSConfSGDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAD47072278A39E300929D82 /* iOSConfSGDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAD47079278A39E300929D82 /* Build configuration list for PBXNativeTarget "iOSConfSGDemoTests" */;
+			buildPhases = (
+				EAD4706F278A39E300929D82 /* Sources */,
+				EAD47070278A39E300929D82 /* Frameworks */,
+				EAD47071278A39E300929D82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAD47078278A39E300929D82 /* PBXTargetDependency */,
+			);
+			name = iOSConfSGDemoTests;
+			productName = iOSConfSGDemoTests;
+			productReference = EAD47073278A39E300929D82 /* iOSConfSGDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA272AAD27872B9D00AA3D03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					EA272AB427872B9D00AA3D03 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					EAD47072278A39E300929D82 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = EA272AB427872B9D00AA3D03;
+					};
+				};
+			};
+			buildConfigurationList = EA272AB027872B9D00AA3D03 /* Build configuration list for PBXProject "iOSConfSGDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA272AAC27872B9D00AA3D03;
+			productRefGroup = EA272AB627872B9D00AA3D03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA272AB427872B9D00AA3D03 /* iOSConfSGDemo */,
+				EAD47072278A39E300929D82 /* iOSConfSGDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA272AB327872B9D00AA3D03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA272AC527872B9E00AA3D03 /* LaunchScreen.storyboard in Resources */,
+				EA272AC227872B9E00AA3D03 /* Assets.xcassets in Resources */,
+				EA272AC027872B9D00AA3D03 /* HogwartsHouses.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAD47071278A39E300929D82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA272AB127872B9D00AA3D03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA272B182788C81A00AA3D03 /* HouseListInteractor.swift in Sources */,
+				EA272B222788D6C500AA3D03 /* StudentListRouter.swift in Sources */,
+				EACF8BC3278CE05000DE084C /* StudentListDetailsRouter.swift in Sources */,
+				EA272B0627879A1000AA3D03 /* StudentListViewController.swift in Sources */,
+				EACF8BC4278CE05000DE084C /* StudentListDetailsModels.swift in Sources */,
+				EA272B1A2788C82700AA3D03 /* HouseListPresenter.swift in Sources */,
+				EACF8BC1278CE05000DE084C /* StudentListDetailsPresenter.swift in Sources */,
+				EA272B0527879A1000AA3D03 /* StudentListModels.swift in Sources */,
+				EA272ABD27872B9D00AA3D03 /* HouseListViewController.swift in Sources */,
+				EA272B202788C87400AA3D03 /* HouseListRouter.swift in Sources */,
+				EA272B0727879A1000AA3D03 /* StudentListInteractor.swift in Sources */,
+				EA272AB927872B9D00AA3D03 /* AppDelegate.swift in Sources */,
+				EA272AFB2787950800AA3D03 /* StudentNetworkModel.swift in Sources */,
+				EA272B0327879A1000AA3D03 /* StudentListNetworkWorker.swift in Sources */,
+				EACF8BC2278CE05000DE084C /* StudentListDetailsWorker.swift in Sources */,
+				EACF8BC5278CE05000DE084C /* StudentListDetailsViewController.swift in Sources */,
+				EA272B1C2788C83500AA3D03 /* HouseListModels.swift in Sources */,
+				EACF8BC6278CE05000DE084C /* StudentListDetailsInteractor.swift in Sources */,
+				EA272ABB27872B9D00AA3D03 /* SceneDelegate.swift in Sources */,
+				EA272B0227879A1000AA3D03 /* StudentListPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAD4706F278A39E300929D82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAD47090278BAC4C00929D82 /* StudentListSeeds.swift in Sources */,
+				EAD47087278A406900929D82 /* StudentListViewControllerTests.swift in Sources */,
+				EAD4708C278A40BA00929D82 /* HouseListInteractorTests.swift in Sources */,
+				EAD47083278A3FE800929D82 /* StudentListPresenterTests.swift in Sources */,
+				EAD4708A278A40A400929D82 /* HouseListPresenterTests.swift in Sources */,
+				EAD47085278A405600929D82 /* StudentListInteractorTests.swift in Sources */,
+				EAD4708E278A40CD00929D82 /* HouseListViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAD47078278A39E300929D82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA272AB427872B9D00AA3D03 /* iOSConfSGDemo */;
+			targetProxy = EAD47077278A39E300929D82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA272ABE27872B9D00AA3D03 /* HogwartsHouses.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA272ABF27872B9D00AA3D03 /* Base */,
+			);
+			name = HogwartsHouses.storyboard;
+			sourceTree = "<group>";
+		};
+		EA272AC327872B9E00AA3D03 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA272AC427872B9E00AA3D03 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA272AC727872B9E00AA3D03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA272AC827872B9E00AA3D03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA272ACA27872B9E00AA3D03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9G3SM93N6Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOSConfSGDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = HogwartsHouses;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danijelavrzan.iOSConfSGDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA272ACB27872B9E00AA3D03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9G3SM93N6Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOSConfSGDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = HogwartsHouses;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danijelavrzan.iOSConfSGDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EAD4707A278A39E300929D82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9G3SM93N6Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danijelavrzan.iOSConfSGDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSConfSGDemo.app/iOSConfSGDemo";
+			};
+			name = Debug;
+		};
+		EAD4707B278A39E300929D82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9G3SM93N6Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danijelavrzan.iOSConfSGDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSConfSGDemo.app/iOSConfSGDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA272AB027872B9D00AA3D03 /* Build configuration list for PBXProject "iOSConfSGDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA272AC727872B9E00AA3D03 /* Debug */,
+				EA272AC827872B9E00AA3D03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA272AC927872B9E00AA3D03 /* Build configuration list for PBXNativeTarget "iOSConfSGDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA272ACA27872B9E00AA3D03 /* Debug */,
+				EA272ACB27872B9E00AA3D03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAD47079278A39E300929D82 /* Build configuration list for PBXNativeTarget "iOSConfSGDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAD4707A278A39E300929D82 /* Debug */,
+				EAD4707B278A39E300929D82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA272AAD27872B9D00AA3D03 /* Project object */;
+}

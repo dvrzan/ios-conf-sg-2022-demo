@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PTW-BM-LhI">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--House List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HouseListViewController" id="BYZ-38-t0r" customClass="HouseListViewController" customModule="iOSConfSGDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ymw-vV-5dl" userLabel="Houses Container View">
+                                <rect key="frame" x="35" y="238" width="320" height="368"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TA4-qK-b5b">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="368"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PZ0-gI-VOH">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="184"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jwA-9l-qGc" userLabel="Gryffindor View">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="184"/>
+                                                        <subviews>
+                                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHF-u9-lM8" userLabel="Gryffindor Button">
+                                                                <rect key="frame" x="0.0" y="17" width="150" height="150"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="oHF-u9-lM8" secondAttribute="height" multiplier="1:1" id="LzH-NW-7uF"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button" image="Gryffindor">
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="houseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jxn-TN-lyG"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="oHF-u9-lM8" firstAttribute="centerY" secondItem="jwA-9l-qGc" secondAttribute="centerY" id="4cm-wa-7ia"/>
+                                                            <constraint firstItem="oHF-u9-lM8" firstAttribute="centerX" secondItem="jwA-9l-qGc" secondAttribute="centerX" id="4hQ-xz-GDY"/>
+                                                            <constraint firstItem="oHF-u9-lM8" firstAttribute="leading" secondItem="jwA-9l-qGc" secondAttribute="leading" id="GRI-2n-4TS"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OKR-tR-tFl" userLabel="Slytherin View">
+                                                        <rect key="frame" x="170" y="0.0" width="150" height="184"/>
+                                                        <subviews>
+                                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0d-ye-lm4" userLabel="Slytherin Button">
+                                                                <rect key="frame" x="0.0" y="17" width="150" height="150"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="X0d-ye-lm4" secondAttribute="height" multiplier="1:1" id="29Z-9s-uZN"/>
+                                                                </constraints>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button" image="Slytherin"/>
+                                                                <connections>
+                                                                    <action selector="houseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FCS-4U-bB5"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="X0d-ye-lm4" firstAttribute="centerX" secondItem="OKR-tR-tFl" secondAttribute="centerX" id="4Qd-v9-4N4"/>
+                                                            <constraint firstItem="X0d-ye-lm4" firstAttribute="centerY" secondItem="OKR-tR-tFl" secondAttribute="centerY" id="pyZ-Jl-Nx3"/>
+                                                            <constraint firstItem="X0d-ye-lm4" firstAttribute="leading" secondItem="OKR-tR-tFl" secondAttribute="leading" id="qMX-K9-PcG"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iep-dr-RRz">
+                                                <rect key="frame" x="0.0" y="184" width="320" height="184"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WAJ-dg-yT0" userLabel="Hufflepuff View">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="184"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpx-2E-tBB" userLabel="Hufflepuff Button">
+                                                                <rect key="frame" x="0.0" y="17" width="150" height="150"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="jpx-2E-tBB" secondAttribute="height" multiplier="1:1" id="ZaE-LW-UB8"/>
+                                                                </constraints>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button" image="Hufflepuff"/>
+                                                                <connections>
+                                                                    <action selector="houseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ldU-j4-hsB"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="jpx-2E-tBB" firstAttribute="centerY" secondItem="WAJ-dg-yT0" secondAttribute="centerY" id="1Wp-j3-umX"/>
+                                                            <constraint firstItem="jpx-2E-tBB" firstAttribute="centerX" secondItem="WAJ-dg-yT0" secondAttribute="centerX" id="5lL-JU-KT7"/>
+                                                            <constraint firstItem="jpx-2E-tBB" firstAttribute="leading" secondItem="WAJ-dg-yT0" secondAttribute="leading" id="MW2-lm-DzH"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LpT-Wc-bYl" userLabel="Ravenclaw View">
+                                                        <rect key="frame" x="170" y="0.0" width="150" height="184"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScC-GZ-0BQ" userLabel="Ravenclaw Button">
+                                                                <rect key="frame" x="0.0" y="17" width="150" height="150"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="ScC-GZ-0BQ" secondAttribute="height" multiplier="1:1" id="XGf-7p-ecS"/>
+                                                                </constraints>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button" image="Ravenclaw"/>
+                                                                <connections>
+                                                                    <action selector="houseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o7F-ea-1yk"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="ScC-GZ-0BQ" firstAttribute="leading" secondItem="LpT-Wc-bYl" secondAttribute="leading" id="YwK-ue-dKu"/>
+                                                            <constraint firstItem="ScC-GZ-0BQ" firstAttribute="centerY" secondItem="LpT-Wc-bYl" secondAttribute="centerY" id="gkt-rP-nI8"/>
+                                                            <constraint firstItem="ScC-GZ-0BQ" firstAttribute="centerX" secondItem="LpT-Wc-bYl" secondAttribute="centerX" id="jEh-Yw-LIb"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="TA4-qK-b5b" secondAttribute="trailing" id="MhR-sc-m4P"/>
+                                    <constraint firstAttribute="bottom" secondItem="TA4-qK-b5b" secondAttribute="bottom" id="TQl-4I-igJ"/>
+                                    <constraint firstItem="TA4-qK-b5b" firstAttribute="top" secondItem="Ymw-vV-5dl" secondAttribute="top" id="hGB-59-P2d"/>
+                                    <constraint firstItem="TA4-qK-b5b" firstAttribute="leading" secondItem="Ymw-vV-5dl" secondAttribute="leading" id="v9T-Ta-ZPO"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a house:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLH-Gw-js2" userLabel="Select Label">
+                                <rect key="frame" x="20" y="200" width="350" height="30"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ymw-vV-5dl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="RvT-uu-By4"/>
+                            <constraint firstItem="Ymw-vV-5dl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XJg-8D-6ia"/>
+                            <constraint firstItem="Ymw-vV-5dl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="mwS-a5-SiN"/>
+                            <constraint firstItem="mLH-Gw-js2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oYa-30-7iT"/>
+                            <constraint firstItem="Ymw-vV-5dl" firstAttribute="top" secondItem="mLH-Gw-js2" secondAttribute="bottom" constant="8" symbolic="YES" id="qwc-Ef-XWn"/>
+                            <constraint firstItem="mLH-Gw-js2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sSe-gO-Q3c"/>
+                            <constraint firstItem="Ymw-vV-5dl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zua-fW-t54"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Poi-to-J61"/>
+                    <connections>
+                        <outlet property="gryffindorButton" destination="oHF-u9-lM8" id="obu-ew-mcy"/>
+                        <outlet property="hufflepuffButton" destination="jpx-2E-tBB" id="4gU-DR-oCi"/>
+                        <outlet property="ravenclawButton" destination="ScC-GZ-0BQ" id="oQw-bd-MFj"/>
+                        <outlet property="slytherinButton" destination="X0d-ye-lm4" id="IVD-Qq-jbP"/>
+                        <segue destination="0yR-Rj-wR4" kind="show" identifier="StudentList" id="bYr-k5-WbN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947.69230769230762" y="115.87677725118483"/>
+        </scene>
+        <!--Student List View Controller-->
+        <scene sceneID="sLG-MJ-xZY">
+            <objects>
+                <viewController storyboardIdentifier="StudentListViewController" title="StudentListViewController" id="0yR-Rj-wR4" userLabel="Student List View Controller" customClass="StudentListViewController" customModule="iOSConfSGDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cvf-pc-SKq">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="d9a-Dx-EWU">
+                                <rect key="frame" x="0.0" y="88" width="390" height="722"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="studentCell" textLabel="IFG-Ff-oCc" style="IBUITableViewCellStyleDefault" id="3UM-dn-OkG">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3UM-dn-OkG" id="XHM-6T-ZwQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IFG-Ff-oCc">
+                                                    <rect key="frame" x="20" y="0.0" width="350" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="0yR-Rj-wR4" id="iJM-5Z-Noh"/>
+                                    <outlet property="delegate" destination="0yR-Rj-wR4" id="3tV-eb-cJW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xWQ-lA-aPc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xWQ-lA-aPc" firstAttribute="bottom" secondItem="d9a-Dx-EWU" secondAttribute="bottom" id="SMT-C4-7Y6"/>
+                            <constraint firstItem="d9a-Dx-EWU" firstAttribute="top" secondItem="xWQ-lA-aPc" secondAttribute="top" id="Umq-bh-HOA"/>
+                            <constraint firstItem="xWQ-lA-aPc" firstAttribute="trailing" secondItem="d9a-Dx-EWU" secondAttribute="trailing" id="WJN-2y-Pz6"/>
+                            <constraint firstItem="d9a-Dx-EWU" firstAttribute="leading" secondItem="xWQ-lA-aPc" secondAttribute="leading" id="tfb-jb-hIc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="List of students" id="K0p-9c-Ngz"/>
+                    <connections>
+                        <outlet property="tableView" destination="d9a-Dx-EWU" id="qk1-xp-gnP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UCV-Cs-Sby" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1797" y="116"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FlX-Vu-jnk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PTW-BM-LhI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WFR-Hr-rZR">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="35A-Sb-172"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kOs-rh-jYn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110.76923076923076" y="115.87677725118483"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Gryffindor" width="250" height="250"/>
+        <image name="Hufflepuff" width="250" height="250"/>
+        <image name="Ravenclaw" width="250" height="250"/>
+        <image name="Slytherin" width="250" height="250"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
